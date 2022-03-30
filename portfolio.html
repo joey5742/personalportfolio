@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+  Joey S
+  File name: portfolio.html
+  Current date: 3/29/2022
+-->
+<html lang="en">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Portfolio of website designs">
+  <title>JPS Web Design | Portfolio</title>
+</head>
+
+<body onload='init()'>
+  <div id="container">
+    <!--Mobile Navigation-->
+    <nav class="mobilenav">
+    <div id="menulinks">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About Me</a> 
+      <a href="design.html">Web Design</a> 
+      <a href="develop.html">Web Development</a>
+      <a href="contact.html">Contact</a>
+    </div>
+     <a class="menuicon" onclick="sandwich()">
+       <div>&#9776;</div>
+        </a>
+      </nav> 
+
+ <header>
+    <div class="tablet-desk">
+     <figure>
+     <img src="images/jpslogo3.jpg" alt="My Logo">
+     <!-- <figcaption>Design possibilities as numerous as the stars in the sky!</figcaption> -->
+     </figure>
+     <h2>Website services for small businesses and organizations</h2>
+    </div>
+    <div class="mobile">
+        <img src="images/jpslogo4.jpg" alt="My Little Logo" class="round" height="100">
+      </div>
+  </header>
+
+  <nav class="tablet-desk">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="design.html">Web Design</a></li> 
+    <li><a href="develop.html">Web Development</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--main element is to add the main content for the webpage--> 
+  <main>
+    <article class="part1"> 
+      <h1>Example of Prior Website Designs and Development</h1>
+       <figure class="card" id="card1">
+          <img src="images/forwardfit.png" alt="screenshot of Forward Fitness Website" />
+          <figcaption id="caption1"><em>Designed and developed a fully responsive website for a popular fitness club in Boston. The website includes multiple forms of media.</em></figcaption>
+       </figure>
+       <figure class="card" id="card2">
+          <img src="images/music.png" alt="screenshot of Strike A Chord Website" />
+          <figcaption id="caption2"><em>Designed and developed a responsive website for a leading music store in the Chicago area. This website also has multiple forms of media. </em></figcaption>
+       </figure>
+       <figure class="card" id="card3">
+          <img src="images/wildrescue.png" alt="screenshot of Wild Rescue Website" />
+          <figcaption id="caption3"><em>Developed website for a non-profit organization that helps injured wildlife in Central Florida. In addition, meta tags are included to enhance search engine optimization.</em></figcaption>
+       </figure>
+       
+    </article>  
+    
+    <section class="effects">
+      <h1>Web Design can include effects such as shown above and others such as the slideshow below plus audio and video elements.</h1>
+  
+  <!--Slideshow using Canvas in Script File-->
+      <div id='content'>
+        <canvas id='showCanvas' width='600' height='450'>
+          Canvas Not Supported
+        </canvas>
+      </div>
+  
+      <div id="media">
+      <p>Adding audio to a website is a good effect.</p>
+
+      <audio controls>
+        <source src="media/piano.mp3" type="audio/mp3">
+        <source src="media/piano.ogg" type="audio/ogg">
+        <p>Your browser does not support the audio element</p>
+        </audio> 
+
+        <p>Adding videos can also enhance your website.<span class="viewex" onclick="burpees()"> View Example.</span></p>
+
+        <video controls id="example">
+					<source id="vid-src" src="vid" type="video/mp4">
+					<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+					<p>Your browser does not support the video element.</p>
+				</video>
+      </div>
+    </section>
+  
+  </main>
+
+   <footer>
+    <div class="copyright">
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+      <p><a class id="link" href="mailto:Joey@gmail.com">Joey@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo2.png" alt="Linkedin logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+    </div>
+  </footer>
+  
+  </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  Joey S
+  File name: contact.html
+  Current date: 3/30/2022
+-->
+<html lang="en">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="I can be reached at: Joey@gmail.com or (727) 987-6543">
+  <title>JPS Web Design | Contact Me</title>
+</head>
+
+<body>
+  <div id="container">
+    <!--Mobile Navigation-->
+    <nav class="mobilenav">
+    <div id="menulinks">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About Me</a> 
+      <a href="design.html">Web Design</a> 
+      <a href="develop.html">Web Development</a>
+      <a href="contact.html">Contact</a>
+    </div>
+     <a class="menuicon" onclick="sandwich()">
+       <div>&#9776;</div>
+        </a>
+      </nav> 
+
+   <header>
+    <div class="tablet-desk">
+      <figure>
+     <img src="images/jpslogo3.jpg" alt="My Logo">
+     <!-- <figcaption>Design possibilities as numerous as the stars in the sky!</figcaption> -->
+     </figure>
+     <h2>Website services for small businesses and organizations</h2>
+    </div>
+    <div class="mobile">
+      <img src="images/jpslogo4.jpg" alt="My Little Logo" class="round" height="100">
+      </div>
+  </header>
+
+  <nav class="tablet-desk">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="design.html">Web Design</a></li> 
+    <li><a href="develop.html">Web Development</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--main element is to add the main content for the webpage--> 
+  <main class="othermain grid2">
+    <section>
+      <h2>Please contact me at:</h2>
+      <p class="intro introd">&#9993;<a class="link" href="mailto:Joey@gmail.com">Joey@gmail.com</a><p>
+        <p class="mobile phone">&#9742;<a href="tel:7279876543">(727)987-6543</a></p>
+        <p class="tablet-desk telnum introd">&#9742; (727) 987-6543</p>
+
+        <p class="intro introd"><b>Pinellas Technical College</b> in Clearwater is located at:</p>
+        <p class="intro introd"><a class="link" href="https://www.google.com/maps/place/6100+154th+Ave+N,+Clearwater,+FL+33760/@27.9106408,-82.7200217,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2e55c8f612d69:0x329404cc6236e84b!8m2!3d27.9106408!4d-82.717833"> 6100 154th Avenue N Clearwater, FL 33760</a></p>
+
+         <!-- Google Map Copied Code -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7051.438742161394!2d-82.7225372246223!3d27.910583880832558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e55c5dbd1735%3A0xd2cc5a7ca6342705!2s6100%20154th%20Ave%20N%2C%20Clearwater%2C%20FL%2033760!5e0!3m2!1sen!2sus!4v1648577864515!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section> 
+
+<!-- Form for contact information -->
+    <div id="form">
+
+			<h2>Let's keep in touch!</h2>
+
+				<form><!-- Start Form -->
+				
+			<!-- 	<fieldset>
+					<legend>Contact Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName" required>
+
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName" required>
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+
+				<input type="submit" id="submit" onclick="window.location.href='https://www.w3docs.com';" value="Please select for Contact page" class="btn"> -->
+
+        <a id="submit" href="contactform/contact_form.php" target="_blank">Please select for Contact page</a>
+
+				</form>
+        
+        
+			</div>
+  </main>
+
+   <footer>
+    <div class="copyright">
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+      <p><a class id="link" href="mailto:Joey@gmail.com">Joey@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo2.png" alt="Linkedin logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+    </div>
+  </footer>
+  </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

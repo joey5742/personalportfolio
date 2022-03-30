@@ -1,0 +1,73 @@
+
+/* CSS Reset */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* body formating of contact form*/
+
+header {
+  position: static;
+  padding-bottom: 1%;
+}
+
+figure > img {
+  border-radius: 5px; 
+}
+
+.contact {
+    height: 1000px;
+    background-image: linear-gradient(lightblue,gold);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25em;  
+}
+
+#form {
+  border: 2px solid dodgerblue;
+  border-radius: 4px;
+  margin-top: 3%;
+  padding: 2%;
+}
+
+#form h2 {
+  text-align: center;
+  color:blue;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: blue; 
+}
+
+label {
+  display: block;
+  padding-top: 1%; 
+}
+
+form #reference {
+  background-color: dodgerblue;
+  font-size: 1em;
+}
+
+form #submit {
+  margin: 0 auto;
+  border: none;
+  display: block;
+  padding: 2%;
+  background-color: dodgerblue;
+  font-size: 1em;
+  border-radius: 5px; 
+}

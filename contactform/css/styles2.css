@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+/* Style for review form */
+
+#container {
+    height: 1000px;
+    background-image: radial-gradient(rgb(248, 156, 169), rgb(134, 183, 247), rgb(255, 255, 255));
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25em;  
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: red; 
+  }  
+
+  #review{
+    border: 2px solid dodgerblue;
+    border-radius: 4px;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  #review h2{
+      text-align: center; 
+      color: red;
+      text-decoration:underline;
+      font-style: italic;
+  }
+
+  #review p {
+      margin-left: 10%;
+  }
+
+  #review .comment {
+      margin-top: 2%; 
+      margin-left: 15%; 
+      font-size: 1.35em; 
+      font-weight: bold;
+  }

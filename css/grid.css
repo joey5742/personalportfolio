@@ -1,0 +1,233 @@
+/* 
+Author: Joey S
+File Name: grid.css
+CSS used for Home Page (index.html)
+Date: 03/30/2022
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h2, img, ul, figure, figcaption, article, section, aside, audio {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Style Rule for Image and Body Background */
+img, audio {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(skyblue,dodgerblue);
+  font-family: 'Times New Roman', serif;
+  font-size: 1.25em;
+  color: floralwhite;  
+}
+
+.venues {
+  color:gold;
+  text-align:center;
+}
+
+
+/* Add padding to all of the .container child elements */
+
+.container-fluid > * {
+  padding: 20px;
+}
+
+@media screen and (max-width: 799px) {
+
+  nav > * {
+    display: none;
+  }
+
+  .mobilenav a {
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2%;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menuicon {
+    color: white;
+  }
+
+  .d-block {
+    display: none; 
+  }
+
+}
+
+/* Making the home page grid responsive */
+
+@supports (grid-area: auto) {
+
+@media screen and (min-width: 800px) {
+
+.mobilenav {
+  display: none;
+}
+
+.container-fluid {
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  grid-template-columns: repeat(12,minmax(0, 1fr));
+}
+
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 1 / 13;
+}
+
+header > img {
+  border-radius: 5px; 
+}
+
+
+main {
+  background: dodgerblue;
+  grid-column: 4 / 10; 
+  font-size: 1.25em;
+}
+
+.carousel-item > img {
+  border-radius: 5px;
+}
+
+nav {
+  background: #1A936F;
+  grid-column: 1 / 4;
+  grid-row: 3 / 10;
+  text-decoration: none;
+  font-size:1em;
+}
+
+nav ul {
+  list-style: none; 
+  /* margin: 1em;
+  text-align: left;  */
+}
+
+nav li {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10% 0px;
+  border: none; 
+}
+
+nav li a {
+    color: floralwhite;
+    text-decoration: none; 
+    display: block;
+    padding: 0.5em;
+    border: 1px solid white; 
+    border-radius: 3px;
+    background-color: rgb(50, 130, 205);
+    box-shadow: -5px -5px 10px rgb(97, 94, 94);
+    text-align: center;
+    padding: 0.2em 1em;
+} 
+
+nav li a:hover {
+    color: midnightblue;
+    background-color: floralwhite;
+    font-style: italic; 
+    transform: skew(10deg);
+    transform: scale(1.1);
+}
+
+.link:hover {
+  color: midnightblue;
+  background-color: floralwhite;
+  font-style: italic; 
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav > h2, aside > h2 {
+  text-align:center;
+  margin-bottom: 15%;
+}
+
+aside {
+  background: #1A936F;
+  grid-column: 10 / 13; 
+}
+
+aside > h4 {
+  margin-bottom: 5%;
+  text-align: center; 
+}
+
+.logo1 {
+  margin-bottom: 10%; 
+  border-radius: 5px;
+  box-shadow: -5px -5px 10px rgb(97, 94, 94);
+}
+
+main, nav, aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+  grid-column: 1 / 13;
+}
+
+/* style for footers */
+footer {
+  border-top: 3px solid gold;
+  overflow: auto;
+}
+
+footer .copyright { 
+  font-size: 0.75em;
+  text-align: left;
+  color: #fff;
+  padding: 2% 10%;
+  float: left; 
+  width: 75%; 
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social {
+  float: right;
+  width: 20%;
+}
+
+.social img {
+  background-color: floralwhite;
+  display: inline-block;
+  margin-top: 12%;
+  padding: 2%;
+}
+ }
+}
+
+

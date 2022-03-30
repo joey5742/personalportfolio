@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+  Joey S
+  File name: develop.html
+  Current date: 3/30/2022
+-->
+<html lang="en">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="There are three different types of Web Developers: Front End Developer, Back End Developer, and Full Stack Developers">
+  <title>JPS Web Design | Web Development</title>
+</head>
+
+<body>
+  <div id="container">
+    <!--Mobile Navigation-->
+    <nav class="mobilenav">
+    <div id="menulinks">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About Me</a> 
+      <a href="design.html">Web Design</a> 
+      <a href="develop.html">Web Development</a>
+      <a href="contact.html">Contact</a>
+    </div>
+     <a class="menuicon" onclick="sandwich()">
+       <div>&#9776;</div>
+        </a>
+      </nav> 
+
+ <header>
+    <div class="tablet-desk">
+     <figure>
+     <img src="images/jpslogo3.jpg" alt="My Logo">
+     <!-- <figcaption>Design possibilities as numerous as the stars in the sky!</figcaption> -->
+     </figure>
+     <h2>Website services for small businesses and organizations</h2>
+    </div>
+    <div class="mobile">
+      <img src="images/jpslogo4.jpg" alt="My Picture" class="round" height="100">
+      </div>
+  </header>
+
+  <nav class="tablet-desk">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="design.html">Web Design</a></li> 
+    <li><a href="develop.html">Web Development</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--main element is to add the main content for the webpage--> 
+  <main class="othermain">
+<!--Types of Web Developers for Mobile-->
+    <div class="mobile">
+    <section>
+      <h2>The three types of Web Developers</h2>
+      <h4>Front-end Developers</h4> 
+       <ul class="dev">
+         <li>They code the part of the website that the user sees and interacts with.</li>
+         <li>They ensure reponsive design.</li> 
+         <li>They develop websites using HTML, JavaScript and CSS.</li>
+       </ul>
+    </section>
+
+    <section>
+      <h4>Back-end Developers</h4> 
+        <ul class="dev">
+          <li>They build and maintain the technology needed for the website developed in the Front-end.</li> 
+          <li>They make sure the website created is fully functional.</li>
+          <li>Some of the software used includes: Python, JavaScript, Laravel, Django, MongoDB and MySQL.
+        </ul>
+    </section> 
+
+    <section>
+      <h4>Full Stack Developers</h4>
+        <ul class="dev">
+          <li>Knowledgeable in both Front-end and Back-end development.</li> 
+          <li>They provide guidance on strategy and best practices.</li>
+          <li>They know the software used by Front-end and Back-end developers such as HTML, CSS, JavaScript, Python, MongoDB and SQL.</li> 
+        </ul>
+    </section>
+    </div>
+
+    <div class="tablet-desk">
+
+<!--Table for types of web developers for tablet and desktop-->
+
+        <table><!-- Start Table-->
+          <caption>The Three Types of Web Developers</caption>
+                <tr><!--Row 1-->
+                    <th>Type of Developer</th>
+                    <th>What they do</th>
+                    <th>Software Knowledge</th>
+                </tr>
+
+                <tr><!-- Row 2 -->
+                    <th class="row">Front-end Developer</th>
+                    <td>They code the part of the website that the user sees and interacts with and are responsible for responsive design.</td>
+                    <td>HTML, JavaScript and CSS</td>     
+                </tr>
+
+                <tr><!-- Row 3 -->
+                    <th class="row">Back-end Developers</th>
+                    <td>They build and maintain the technology needed for the website developed in the Front-end. They make sure the website created is fully functional.</td>
+                    <td>Python, JavaScript, Laravel, Django, MongoDB and MySQL</td>
+              </tr>
+
+               <tr><!-- Row 4 -->
+                    <th class="row">Full Stack Developers</th>
+                    <td>Knowledgeable in both Front-end and Back-end development. They provide guidance on strategy and best practices.</td>
+                    <td>HTML, CSS, JavaScript, Python, MongoDB and SQL.</td>
+              </tr> 
+          </table>             
+    </div>
+          
+  </main>
+
+   <footer>
+    <div class="copyright">
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+      <p><a class id="link" href="mailto:Joey@gmail.com">Joey@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo2.png" alt="Linkedin logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+    </div>
+  </footer>
+</div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
